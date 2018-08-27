@@ -39,6 +39,7 @@ class ProductTableViewController: UITableViewController,IndicatorInfoProvider {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.reload()
+        self.tableView.startRefreshing(at: .top)
     }
     
     deinit {
@@ -88,6 +89,10 @@ class ProductTableViewController: UITableViewController,IndicatorInfoProvider {
         return self.products.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55.0
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
         let product = self.products[indexPath.row]
