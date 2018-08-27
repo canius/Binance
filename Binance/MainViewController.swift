@@ -44,6 +44,10 @@ class MainViewController: ButtonBarPagerTabStripViewController,UISearchBarDelega
                 strongSelf.reloadPagerTabStripView()
             }
         }
+        DispatchQueue.main.async {
+            let currentVC = self.viewControllers[self.currentIndex] as! ProductTableViewController
+            currentVC.tableView.startRefreshing(at: .top)
+        }
     }
     
     deinit {
@@ -53,6 +57,7 @@ class MainViewController: ButtonBarPagerTabStripViewController,UISearchBarDelega
     @objc func search() {
         self.navigationItem.titleView = searchBar
         self.navigationItem.rightBarButtonItem = cancelButton
+        searchBar.becomeFirstResponder()
     }
     
     @objc func cancel() {

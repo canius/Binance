@@ -39,7 +39,6 @@ class ProductTableViewController: UITableViewController,IndicatorInfoProvider {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.reload()
-        self.tableView.startRefreshing(at: .top)
     }
     
     deinit {
