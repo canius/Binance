@@ -1,0 +1,40 @@
+PODS:
+  - BeyovaNet/Core (0.0.10)
+  - BeyovaNet/Promise (0.0.10):
+    - BeyovaNet/Core
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.3.4)
+  - PullToRefresher (3.0.2)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - RealmSwift (3.7.6):
+    - Realm (= 3.7.6)
+  - XLPagerTabStrip (8.0.1)
+
+DEPENDENCIES:
+  - BeyovaNet/Promise
+  - PullToRefresher
+  - RealmSwift
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BeyovaNet
+    - PromiseKit
+    - PullToRefresher
+    - Realm
+    - RealmSwift
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  BeyovaNet: bd7a5bc76ff5c8595f27d1183de452e21a0ea879
+  PromiseKit: e1425568123ec844a944c93f2bcb29d511d39cf5
+  PullToRefresher: 25a367871a70b1da0b28e8e7cecceb4ef04f5f56
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
+  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
+
+PODFILE CHECKSUM: ea35c2790d93e6f13066773264682872e5fc4a84
+
+COCOAPODS: 1.5.3
